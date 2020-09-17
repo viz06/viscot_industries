@@ -1,0 +1,194 @@
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  	$(".b3").click(function(){
+  		$("#bg").addClass("oct");
+  		$(".main").show();
+  	});
+  });
+  </script>
+  <script>
+  	$(document).ready(function(){
+  		$(".close").click(function(){
+  			$("#bg").removeClass("oct");
+  			$(".main").hide();
+  		});
+  	});
+  </script>
+	<style>
+		body{
+			background-image: url('vis.jpg');
+			background-repeat: no-repeat;
+			background-position: fixed;
+			background-attachment: cover;
+		}
+		.oct{
+			opacity:0.5;
+		}
+		.img{
+			position:absolute;
+			text-align:left;
+			top:5%;
+			margin-left:0px;
+			transform:rotate(-15deg);
+		}
+		.img1{
+			position:absolute;
+			text-align:center;
+			top:-25;
+			margin-left:500px;
+			transform:rotate(10deg);
+		}
+		.img2{
+			position:absolute;
+			text-align:left;
+			top:2%;
+			margin-left:1100px;
+			transform:rotate(45deg);
+		}
+		.button{
+			color:white;
+			padding:15px 39px;
+			display:inline-block;
+			text-decoration:none;
+			text-align:center;
+			border:none;
+			margin:10px 5px;
+			transition-duration:0.4s;
+			cursor:pointer;
+		}
+		.b1{
+			position:absolute;
+			color:yellow;
+			background:none;
+			border:2px solid white;
+			top:60.8%;
+			margin-left:200px;
+		}
+		.b1:hover{
+			color:red;
+			background-color:white;
+		}
+		.b2{
+			position:absolute;
+			color:yellow;
+			background:none;
+			border:2px solid white;
+			top:67%;
+			margin-left:570px;
+		}
+		.b2:hover{
+			color:red;
+			background-color:white;
+		}
+		.b3{
+			position:absolute;
+			color:yellow;
+			background:none;
+			border:2px solid white;
+			top:56%;
+			margin-left:1000px;
+		}
+		.b3:hover{
+			color:red;
+			background-color:white;
+		}
+		.main{
+			display:none;
+			top:3%;
+			margin-left:450px;
+			height:600px;
+			width:500px;
+			position:relative;
+		}
+		.card{
+			border-radius:5px;
+			border:2px solid black;
+			box-shadow:0 4px 7px black;
+			cursor:pointer;
+			height:100%;
+			width:100%;
+			transform-style:preserve-3d;
+			transition:all 0.5s ease;
+		}
+		.card:hover{
+			transform:rotateY(180deg);
+		}
+		.front{
+			position:absolute;
+			height:100%;
+			width:100%;
+			backface-visibility:hidden;
+		}
+		.front img{
+			height:100%;
+			width:100%;
+			position:absolute;
+		}
+		.back{
+			position:absolute;
+			background:red;
+			height:100%;
+			width:100%;
+			backface-visibility:hidden;
+			transform:rotateY(180deg);
+		}
+		.back-content{
+			text-align:center;
+		}
+		.back-content p{
+			margin-top:20px;
+		}
+		.alert{
+			position:absolute;
+			border:none;
+			margin-left:750px;
+			top:-2%;
+		}
+		.close{
+			position: absolute;
+			font-size:50px;
+		}
+	</style>
+	</head>
+<body>
+	<div id="bg">
+	<div class="img">
+		<img style="height:400px" src="https://i.ibb.co/gRvz8DL/Whats-App-Image-2020-09-16-at-8-00-08-PM-removebg-preview.png">
+	</div>
+	<button class="button b1"><h2 class="display-4">About</h2></button>
+	<div class="img1">
+		<img style="height:450px" src="https://i.ibb.co/gRvz8DL/Whats-App-Image-2020-09-16-at-8-00-08-PM-removebg-preview.png">
+	</div>
+	<button class="button b2" onclick="document.location='file:///C:/Users/Orv/Desktop/viscot/products.html'"><h2 class="display-4">Products</h2></button>
+	<div class="img2">
+		<img style="height:350px" src="https://i.ibb.co/gRvz8DL/Whats-App-Image-2020-09-16-at-8-00-08-PM-removebg-preview.png">
+	</div>
+	<button class="button b3" onclick="myfunction()"><h2 class="display-4">Contact Us</h2></button>
+</div>
+	<div class="main">
+		<div class="card">
+			<div class="front">
+				<img src="viscot.jpg">
+			</div>
+			<div class="back">
+				<div class="back-content">
+					<h4 class="diplay-2">CONTACT US</h4>
+					<p><h2>DEEPAK GROVER:</h2></p>
+					<p>9254001100</p>
+				</div>
+			</div>
+		</div>
+		<div class="alert alert-succcess alert-dismissible">
+				<button type="button" class="close" data-dismissible="alert">&times;</button>
+			</div>
+	</div>
+</body>
+</html>

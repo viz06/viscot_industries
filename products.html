@@ -1,0 +1,110 @@
+<html>
+<head>
+	<style>
+		body{
+			background-image:url('thread_bg.jpg');
+			background-repeat:no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+		.slideshow{
+			margin:0 auto;
+			padding-top:50px;
+			box-sizing: border-box;
+			height:700px;
+		}
+		.content{
+			margin:auto;
+			padding-top:120px;
+			perspective: 1000px;
+			position:relative;
+			width:190px;
+		}
+		.content-corousel{
+			width:100%;
+			position:absolute;
+			float:right;
+			animation: circle 15s infinite linear;
+			transform-style:preserve-3d;
+		}
+		.content-corousel:hover{
+			animation-play-state: paused;
+			cursor:pointer;
+		}
+		.content-corousel figure{
+			width:100%;
+			height:200px;
+			border:1px solid #4d444d;
+			overflow:hidden;
+			position:absolute;
+		}
+		.content-corousel figure:nth-child(1){
+			transform:rotateY(0deg) translateZ(300px);
+		}
+		.content-corousel figure:nth-child(2){
+			transform:rotateY(40deg) translateZ(300px);
+		}
+		.content-corousel figure:nth-child(3){
+			transform:rotateY(80deg) translateZ(300px);
+		}
+		.content-corousel figure:nth-child(4){
+			transform:rotateY(120deg) translateZ(300px);
+		}
+		.content-corousel figure:nth-child(5){
+			transform:rotateY(160deg) translateZ(300px);
+		}
+		.content-corousel figure:nth-child(6){
+			transform:rotateY(200deg) translateZ(300px);
+		}
+		.content-corousel figure:nth-child(7){
+			transform:rotateY(240deg) translateZ(300px);
+		}
+		.content-corousel figure:nth-child(8){
+			transform:rotateY(280deg) translateZ(300px);
+		}
+		.content-corousel figure:nth-child(9){
+			transform:rotateY(320deg) translateZ(300px);
+		}
+		.shadow{
+			position:absolute;
+			box-shadow:0px 0px 20px 0px #000;
+			border-radius:2px;
+		}
+		.content-corousel img{
+			image-rendering:auto;
+			transition: all 300ms;
+			width:100%;
+			height:100%;
+		}
+		.content-corousel:hover{
+			transform:scale(1.2);
+			transition:all 300ms;
+		}
+		@keyframes circle{
+			from{
+				transform:rotateY(0deg);
+			}
+			to{
+				transform:rotateY(360deg);
+			}
+		}
+	</style>
+	</head>
+<body>
+	<section class="slideshow">
+		<div class="content">
+			<div class="content-corousel"> 
+				<figure class="shadow"><img src="emb.jpg"></figure>
+				<figure class="shadow"><img src="golden_zari.jpg"></figure>
+				<figure class="shadow"><img src="nylon_yarn.jpg"></figure>
+				<figure class="shadow"><img src="resham.jpg"></figure>
+				<figure class="shadow"><img src="silk.jpg"></figure>
+				<figure class="shadow"><img src="rayon_emb.jpg"></figure>
+				<figure class="shadow"><img src="silk_saree.jpg"></figure>
+				<figure class="shadow"><img src="resham_jhumke.jpg"></figure>
+				<figure class="shadow"><img src="resham_shiffon_saree.jpg"></figure>
+			</div>
+		</div>
+	</section>
+	</body>
+</html>
